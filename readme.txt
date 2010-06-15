@@ -1,10 +1,12 @@
-The files in this directory are used for storing customizations to
-gVim Portable other than those in the files _vimrc and _viminfo.
+Hristo Deshev's Vim configuration. Stuff I use:
 
-Custom colorschemes, compilers, syntax files, etc. can go in here;
-use the same directory structure as you do in App\vim\vimXX
-(e.g. App\vim\vim72\colors\PortableApps.com.vim would become
-      Data\settings\vimfiles\colors\PortableApps.com.vim).
+ * PowerShell syntax, indent and ftype
+ * NERDTree
+ * bufexplorer
+ * matchit
 
-Do NOT store your customisations in the App directory, otherwise they
-will be lost when you upgrade gVim Portable.
+I prever to run Vim portable on Windows, so that I don't have to go through an installation on a new machine.
+
+I "redirect" my default _vimrc/.vimrc to the one in ~/vimfiles/_vimrc by adding a single source call:
+
+source ~/vimfiles/_vimrc
