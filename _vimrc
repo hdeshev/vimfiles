@@ -30,6 +30,9 @@ set encoding=utf-8
 setglobal fileencoding=utf-8
 "set bomb
 
+" allow backspacing over everything in insert mode
+set backspace=indent,eol,start
+
 "set the 'current' folder relative to the buffer
 set browsedir=buffer
 
