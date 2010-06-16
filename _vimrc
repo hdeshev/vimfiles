@@ -32,12 +32,16 @@ setglobal fileencoding=utf-8
 "set the 'current' folder relative to the buffer
 set browsedir=buffer
 
-"configure a font that supports cyrillic
-"set guifont=Consolas:h12
-set guifont=DejaVu_Sans_Mono:h10
-"Linux --> set guifont=DejaVu\ Sans\ Mono\ 10
+"configure a monospace font that supports cyrillic
+if has("unix")
+    "set guifont=Consolas:h12
+    set guifont=DejaVu\ Sans\ Mono\ 10
+else
+    set guifont=DejaVu_Sans_Mono:h10
+endif
+
+"No toolbar
 set guioptions-=T
-" set guioptions+=c
 
 "setup window
 winpos 0 0
