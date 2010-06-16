@@ -52,8 +52,13 @@ winpos 0 0
 set lines=50
 set columns=120
  
-source ~/vimfiles/shortcuts.vim
-source ~/vimfiles/filetypes.vim
+if has("unix")
+    source ~/.vim/shortcuts.vim
+    source ~/.vim/filetypes.vim
+else
+    source ~/vimfiles/shortcuts.vim
+    source ~/vimfiles/filetypes.vim
+endif
 
 set nocompatible
 
