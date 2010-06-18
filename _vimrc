@@ -28,6 +28,7 @@ set autowrite
 "unicode options. we want utf-8 and BOM symbols
 set encoding=utf-8
 setglobal fileencoding=utf-8
+set nobomb
 "set bomb
 
 " allow backspacing over everything in insert mode
