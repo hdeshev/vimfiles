@@ -15,21 +15,12 @@ set smarttab
 
 "searching only
 set ignorecase
-"incremental search
-set incsearch
 
 "highlighting
 syntax on
 set hlsearch
-
-"autosave buffers
-set autowrite
-
-"unicode options. we want utf-8 and BOM symbols
-set encoding=utf-8
-setglobal fileencoding=utf-8
-set nobomb
-"set bomb
+"incremental search
+set incsearch
 
 " allow backspacing over everything in insert mode
 set backspace=indent,eol,start
@@ -45,8 +36,10 @@ else
     set guifont=DejaVu_Sans_Mono:h10
 endif
 
-"No toolbar
-set guioptions-=T
+set guioptions-=T "No toolbar
+
+set ruler		" show the cursor position all the time
+set showcmd		" display incomplete commands
 
 "setup window
 winpos 0 0
@@ -64,6 +57,14 @@ endif
 set nocompatible
 
 colorscheme evening
+
+"autosave buffers
+set autowrite
+
+"unicode options. we want utf-8 and BOM symbols
+set encoding=utf-8
+setglobal fileencoding=utf-8
+set nobomb
 
 "don't litter with annoying files when opening a file
 set nobackup
