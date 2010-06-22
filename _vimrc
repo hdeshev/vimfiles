@@ -25,7 +25,7 @@ set incsearch
 " allow backspacing over everything in insert mode
 set backspace=indent,eol,start
 
-"set the 'current' folder relative to the buffer
+"set the GUI 'current' folder relative to the buffer
 set browsedir=buffer
 
 "configure a monospace font that supports cyrillic
@@ -44,7 +44,7 @@ set showcmd		" display incomplete commands
 "setup window
 winpos 0 0
 set lines=50
-set columns=120
+set columns=140
  
 if has("unix")
     source ~/.vim/shortcuts.vim
