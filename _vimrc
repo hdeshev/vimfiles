@@ -43,7 +43,7 @@ set showcmd		" display incomplete commands
 
 "setup window
 winpos 0 0
-set lines=50
+set lines=45
 set columns=140
  
 if has("unix")
