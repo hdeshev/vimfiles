@@ -13,17 +13,23 @@ set autoindent
 set smartindent
 set smarttab
 
-"searching only
-set ignorecase
-
 "highlighting
 syntax on
+
+" search and replace
+set ignorecase
 set hlsearch
-"incremental search
 set incsearch
+set gdefault
 
 " allow backspacing over everything in insert mode
 set backspace=indent,eol,start
+
+" show a completion popup for commands
+set wildmenu
+
+" blink instead of beeping
+set visualbell
 
 "set the GUI 'current' folder relative to the buffer
 set browsedir=buffer
@@ -45,6 +51,8 @@ set showcmd		" display incomplete commands
 winpos 0 0
 set lines=45
 set columns=140
+set ttyfast
+set laststatus=2
  
 if has("unix")
     source ~/.vim/shortcuts.vim
