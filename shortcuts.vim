@@ -25,3 +25,11 @@ map <S-F11> :set filetype=vb<CR>
 "make Enter select the autocomplete menu item
 inoremap <expr> <cr> pumvisible() ? "\<c-y>" : "\<c-g>u\<cr>"
 imap <C-Space> <C-X><C-O>
+
+" move up/down by visible lines instead of file lines
+nnoremap j gj
+nnoremap k gk
+nnoremap ^ g^
+nnoremap <HOME> g^
+nnoremap $ g$
+nnoremap <END> g$
