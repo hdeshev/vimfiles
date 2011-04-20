@@ -20,10 +20,12 @@ map <S-F8> :cprev<CR>
 map <C-S> :w<CR>
 imap <C-S> <Esc>:w<CR>
 
+"copy/paste to other apps
+map <C-INSERT> "+y
+map <S-INSERT> "+gP
+
 map <F12> :set filetype=xml<CR>
 map <S-F12> :set filetype=html<CR>
-"map <F11> :set filetype=cs<CR>
-"map <S-F11> :set filetype=vb<CR>
 
 "make Enter select the autocomplete menu item
 inoremap <expr> <cr> pumvisible() ? "\<c-y>" : "\<c-g>u\<cr>"
