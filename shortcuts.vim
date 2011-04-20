@@ -24,6 +24,12 @@ imap <C-S> <Esc>:w<CR>
 map <C-INSERT> "+y
 map <S-INSERT> "+gP
 
+"easily move across windows
+nnoremap <C-h> <C-w>h
+nnoremap <C-j> <C-w>j
+nnoremap <C-k> <C-w>k
+nnoremap <C-l> <C-w>l
+
 map <F12> :set filetype=xml<CR>
 map <S-F12> :set filetype=html<CR>
 
