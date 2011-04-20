@@ -36,10 +36,10 @@ set browsedir=buffer
 
 "configure a monospace font that supports cyrillic
 if has("unix")
-    set guifont=DejaVu\ Sans\ Mono\ 10
+    set guifont=DejaVu\ Sans\ Mono\ 12
 else
     "set guifont=Consolas:h12
-    set guifont=DejaVu_Sans_Mono:h10
+    set guifont=DejaVu_Sans_Mono:h12
 endif
 
 set guioptions-=T "No toolbar
@@ -49,7 +49,7 @@ set showcmd		" display incomplete commands
 
 "setup window
 winpos 0 0
-set lines=45
+set lines=53
 set columns=140
 set ttyfast
 set laststatus=2
