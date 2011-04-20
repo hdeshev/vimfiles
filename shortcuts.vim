@@ -11,6 +11,9 @@ imap <F4> <Esc>:BufExplorer<CR>
 map <F1> :NERDTreeToggle<CR>
 map <S-F1> :NERDTreeFind<CR>
 imap <F1> <Esc>:NERDTreeToggle<CR>
+nmap <silent> <unique> <Leader>a :Ack
+nmap <silent> <unique> <Leader>g :AckG
+nmap <silent> <unique> <Leader>t :tag
 map <F8> :cnext<CR>
 map <S-F8> :cprev<CR>
 "save
@@ -19,8 +22,8 @@ imap <C-S> <Esc>:w<CR>
 
 map <F12> :set filetype=xml<CR>
 map <S-F12> :set filetype=html<CR>
-map <F11> :set filetype=cs<CR>
-map <S-F11> :set filetype=vb<CR>
+"map <F11> :set filetype=cs<CR>
+"map <S-F11> :set filetype=vb<CR>
 
 "make Enter select the autocomplete menu item
 inoremap <expr> <cr> pumvisible() ? "\<c-y>" : "\<c-g>u\<cr>"
