@@ -14,6 +14,7 @@ imap <F1> <Esc>:NERDTreeToggle<CR>
 nmap <silent> <unique> <Leader>a :Ack
 nmap <silent> <unique> <Leader>g :AckG
 nmap <silent> <unique> <Leader>t :tag
+map <C-F3> :!ctags -R<CR>
 map <F8> :cnext<CR>
 map <S-F8> :cprev<CR>
 "save
@@ -22,7 +23,12 @@ imap <C-S> <Esc>:w<CR>
 
 "copy/paste to other apps
 map <C-INSERT> "+y
+imap <C-INSERT> "+y
 map <S-INSERT> "+gP
+imap <S-INSERT> "+gP
+
+"insert line above while in insert mode
+imap <M-o> <Esc>O
 
 "easily move across windows
 nnoremap <C-h> <C-w>h
