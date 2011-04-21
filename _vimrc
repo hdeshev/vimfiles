@@ -81,3 +81,7 @@ set noswapfile
 
 "Hide abandoned buffers in order to not lose undo history.
 set hidden
+
+"look for tags files next to the current file, in the Vim current
+"folder, and the special Lift 2.3 tags.
+set tags=./tags,tags,~/oss/lift-2-3-tags
