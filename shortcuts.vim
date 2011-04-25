@@ -18,14 +18,14 @@ map <C-F3> :!ctags -R<CR>
 map <F8> :cnext<CR>
 map <S-F8> :cprev<CR>
 "save
-map <C-S> :w<CR>
-imap <C-S> <Esc>:w<CR>
+map <C-S> :wa<CR>
+imap <C-S> <Esc>:wa<CR>
 
 "copy/paste to other apps
 map <C-INSERT> "+y
-imap <C-INSERT> "+y
+imap <C-INSERT> <ESC>"+y
 map <S-INSERT> "+gP
-imap <S-INSERT> "+gP
+imap <S-INSERT> <ESC>"+gP
 
 "insert line above while in insert mode
 imap <M-o> <Esc>O
