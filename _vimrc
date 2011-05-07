@@ -28,8 +28,10 @@ set backspace=indent,eol,start
 " show a completion popup for commands
 set wildmenu
 
-" blink instead of beeping
+" Visual bell "blinks" instead of beeping
 set visualbell
+" And now stop the blinking too.
+set vb t_vb=
 
 "set the GUI 'current' folder relative to the buffer
 set browsedir=buffer
