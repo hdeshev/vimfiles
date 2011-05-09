@@ -86,7 +86,7 @@ set hidden
 
 "look for tags files next to the current file, in the Vim current
 "folder, and the special Lift 2.3 tags.
-set tags=./tags,tags,~/oss/lift-2-3-tags
+set tags=./tags,tags
 
 let NERDTreeMinimalUI=1
 let NERDTreeDirArrows=1
