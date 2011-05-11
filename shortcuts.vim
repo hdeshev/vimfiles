@@ -14,7 +14,7 @@ imap <F1> <Esc>:NERDTreeToggle<CR>
 nmap <silent> <unique> <Leader>a :Ack
 nmap <silent> <unique> <Leader>g :AckG
 nmap <silent> <unique> <Leader>t :tag
-map <C-F3> :!ctags -R<CR>
+map <S-F3> :!ctags -R<CR>
 map <F8> :cnext<CR>
 map <S-F8> :cprev<CR>
 "save
