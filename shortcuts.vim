@@ -43,6 +43,16 @@ map <S-F12> :set filetype=html<CR>
 inoremap <expr> <cr> pumvisible() ? "\<c-y>" : "\<c-g>u\<cr>"
 imap <C-Space> <C-X><C-O>
 
+" Emacs (blasphemy!) shortcuts for cmd line editing
+cnoremap <C-a> <Home>
+cnoremap <C-e> <End>
+cnoremap <C-f> <Right>
+cnoremap <C-b> <Left>
+cnoremap <M-b> <S-Left>
+cnoremap <M-f> <S-Right>
+cnoremap <M-BS> <C-W>
+cnoremap <M-d> <S-Right><C-W>
+
 " move up/down by visible lines instead of file lines
 nnoremap j gj
 nnoremap k gk
