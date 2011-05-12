@@ -45,6 +45,7 @@ else
 endif
 
 set guioptions-=T "No toolbar
+set guioptions-=m "No menubar
 
 set ruler		" show the cursor position all the time
 set showcmd		" display incomplete commands
