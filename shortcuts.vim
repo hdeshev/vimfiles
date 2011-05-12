@@ -21,6 +21,9 @@ map <S-F8> :cprev<CR>
 map <C-S> :wa<CR>
 imap <C-S> <Esc>:wa<CR>
 
+"replace word under cursor (ask for confirmation)
+:nnoremap <Leader>s :%s/\<<C-r><C-w>\>//gc<Left><Left><Left>
+
 "copy/paste to other apps
 map <C-INSERT> "+y
 imap <C-INSERT> <ESC>"+y
