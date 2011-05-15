@@ -52,7 +52,7 @@ set showcmd		" display incomplete commands
 
 "setup window
 winpos 0 0
-set lines=53
+set lines=55
 set columns=140
 set ttyfast
 set laststatus=2
