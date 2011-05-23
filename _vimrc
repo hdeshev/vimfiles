@@ -5,8 +5,6 @@ set completeopt=menuone
 set shiftwidth=4
 set tabstop=4
 set softtabstop=4
-"use tabs instead of spaces
-"set noexpandtab
 "expand tabs into spaces
 set expandtab
 set autoindent
