@@ -36,7 +36,7 @@ set browsedir=buffer
 
 "configure a monospace font that supports cyrillic
 if has("unix")
-    set guifont=DejaVu\ Sans\ Mono\ 12
+    set guifont=Inconsolata\ 12
 else
     "set guifont=Consolas:h12
     set guifont=DejaVu_Sans_Mono:h12
