@@ -36,7 +36,7 @@ set browsedir=buffer
 
 "configure a monospace font that supports cyrillic
 if has("unix")
-    set guifont=Inconsolata\ 13
+    set guifont=DejaVu\ Sans\ Mono\ 12
 else
     "set guifont=Consolas:h12
     set guifont=DejaVu_Sans_Mono:h12
@@ -46,7 +46,6 @@ set guioptions-=T "No toolbar
 set guioptions-=m "No menubar
 
 set ruler		" show the cursor position all the time
-set number      " line numbers
 set showcmd		" display incomplete commands
 
 "setup window
