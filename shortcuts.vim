@@ -11,7 +11,7 @@ imap <F4> <Esc>:BufExplorer<CR>
 map <F1> :NERDTreeToggle<CR>
 map <S-F1> :NERDTreeFind<CR>
 imap <F1> <Esc>:NERDTreeToggle<CR>
-nmap <silent> <unique> <Leader>a :Ack
+" nmap <silent> <unique> <Leader>a :Ack
 nmap <silent> <unique> <Leader>g :AckG
 nmap <silent> <unique> <Leader>t :tag
 map <S-F3> :!ctags -R<CR>
@@ -22,7 +22,8 @@ map <C-S> :wa<CR>
 imap <C-S> <Esc>:wa<CR>
 
 "replace word under cursor (ask for confirmation)
-:nnoremap <Leader>s :%s/\<<C-r><C-w>\>//gc<Left><Left><Left>
+:nnoremap <Leader>r :%s/\<<C-r><C-w>\>//gc<Left><Left><Left>
+:nnoremap <Leader>a :Ack "<C-r><C-w>"
 
 "copy/paste to other apps
 map <C-INSERT> "+y
@@ -46,7 +47,7 @@ map <S-F12> :set filetype=html<CR>
 inoremap <expr> <cr> pumvisible() ? "\<c-y>" : "\<c-g>u\<cr>"
 imap <C-Space> <C-X><C-O>
 
-" Emacs (blasphemy!) shortcuts for cmd line editing
+" Emacs (blasphemy!) shortcuts for cmd line and insert editing
 cnoremap <C-a> <Home>
 cnoremap <C-e> <End>
 cnoremap <C-f> <Right>
@@ -55,6 +56,15 @@ cnoremap <M-b> <S-Left>
 cnoremap <M-f> <S-Right>
 cnoremap <M-BS> <C-W>
 cnoremap <M-d> <S-Right><C-W>
+
+inoremap <C-a> <Home>
+inoremap <C-e> <End>
+inoremap <C-f> <Right>
+inoremap <C-b> <Left>
+inoremap <M-b> <S-Left>
+inoremap <M-f> <S-Right>
+inoremap <M-BS> <C-W>
+inoremap <M-d> <S-Right><C-W>
 
 " move up/down by visible lines instead of file lines
 nnoremap j gj
