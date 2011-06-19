@@ -31,8 +31,13 @@ imap <C-INSERT> <ESC>"+y
 map <S-INSERT> "+gP
 imap <S-INSERT> <ESC>"+gP
 
-"insert line above while in insert mode
+"insert line above insert mode
 imap <M-o> <Esc>O
+map <M-o> <Esc>O
+
+"Prev/Next methods
+map <M-p> [m
+map <M-n> ]m
 
 "easily move across windows
 nnoremap <C-h> <C-w>h
@@ -73,3 +78,9 @@ nnoremap ^ g^
 nnoremap <HOME> g^
 nnoremap $ g$
 nnoremap <END> g$
+vnoremap j gj
+vnoremap k gk
+vnoremap ^ g^
+vnoremap <HOME> g^
+vnoremap $ g$
+vnoremap <END> g$
