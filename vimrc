@@ -44,6 +44,10 @@ endif
 
 set guioptions-=T "No toolbar
 set guioptions-=m "No menubar
+set guioptions-=r "No right scrollbar
+set guioptions-=R "No right scrollbar
+set guioptions-=l "No left scrollbar
+set guioptions-=L "No left scrollbar
 
 set ruler		" show the cursor position all the time
 set showcmd		" display incomplete commands
