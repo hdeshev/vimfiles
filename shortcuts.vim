@@ -11,8 +11,8 @@ imap <F4> <Esc>:BufExplorer<CR>
 map <F1> :NERDTreeToggle<CR>
 map <S-F1> :NERDTreeFind<CR>
 imap <F1> <Esc>:NERDTreeToggle<CR>
-" nmap <silent> <unique> <Leader>a :Ack
-nmap <silent> <unique> <Leader>g :AckG
+nmap <silent> <unique> <Leader>a :Ack
+map <silent> <unique> <Leader>f :CommandT<CR>
 nmap <silent> <unique> <Leader>t :tag
 map <S-F3> :!ctags -R<CR>
 map <F8> :cnext<CR>
@@ -23,7 +23,6 @@ imap <C-S> <Esc>:wa<CR>
 
 "replace word under cursor (ask for confirmation)
 :nnoremap <Leader>r :%s/\<<C-r><C-w>\>//gc<Left><Left><Left>
-:nnoremap <Leader>a :Ack "<C-r><C-w>"
 
 "copy/paste to other apps
 map <C-INSERT> "+y

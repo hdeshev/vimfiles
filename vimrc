@@ -1,3 +1,7 @@
+" load pathogen - the vim bundle manager
+call pathogen#runtime_append_all_bundles()
+call pathogen#helptags()
+
 "completion
 set completeopt=menuone
 
@@ -93,3 +97,5 @@ set tags=./tags,tags
 
 let NERDTreeMinimalUI=1
 let NERDTreeDirArrows=1
+
+let g:ackprg="ack-grep -H --nocolor --nogroup --column"
