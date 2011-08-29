@@ -57,9 +57,12 @@ set ruler		" show the cursor position all the time
 set showcmd		" display incomplete commands
 
 "setup window
-"winpos 0 0
-set lines=55
-set columns=140
+if has("gui_running")
+    "winpos 0 0
+    set lines=55
+    set columns=140
+endif
+
 set ttyfast
 set laststatus=2
  
