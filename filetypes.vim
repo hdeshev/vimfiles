@@ -11,6 +11,7 @@ au BufNewFile,BufRead *.config setf xml
 au BufNewFile,BufRead *.*proj setf xml
 au BufNewFile,BufRead *.*aspx setf html
 au BufNewFile,BufRead *.*ascx setf html
+au BufWinEnter,BufNewFile,BufRead *.ssp setf html
 au BufNewFile,BufRead *.fs setf ocaml
 au BufNewFile,BufRead *.fsx setf ocaml
 au BufNewFile,BufRead *.ps1 setf ps1
