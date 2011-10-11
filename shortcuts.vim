@@ -6,6 +6,7 @@ map <S-F4> :cprev<CR>
 map <C-F4> :bd<CR>
 map <F6> :bn<CR>
 map <S-F6> :bp<CR>
+map <F7> :tn<CR>
 map <F4> :BufExplorer<CR>
 imap <F4> <Esc>:BufExplorer<CR>
 map <F1> :NERDTreeToggle<CR>
