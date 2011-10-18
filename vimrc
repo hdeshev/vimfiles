@@ -29,6 +29,7 @@ set backspace=indent,eol,start
 
 " show a completion popup for commands
 set wildmenu
+set wildmode=list:longest
 
 " Visual bell "blinks" instead of beeping
 set visualbell
@@ -52,6 +53,11 @@ set guioptions-=r "No right scrollbar
 set guioptions-=R "No right scrollbar
 set guioptions-=l "No left scrollbar
 set guioptions-=L "No left scrollbar
+
+"Set xterm terminal title
+set title
+"Shorter messages
+set shortmess=atI
 
 set ruler		" show the cursor position all the time
 set showcmd		" display incomplete commands
@@ -88,12 +94,16 @@ setglobal fileencoding=utf-8
 set nobomb
 
 "don't litter with annoying files when opening a file
-set nobackup
-set nowritebackup
-set noswapfile
+" set nobackup
+" set nowritebackup
+" set noswapfile
+set backupdir=~/.vim/tmp,/tmp
+set directory=~/.vim/tmp,/tmp
 
 "Hide abandoned buffers in order to not lose undo history.
 set hidden
+"Moar history!
+set history=1000
 
 "look for tags files next to the current file, in the Vim current
 "folder, and the special Lift 2.3 tags.
