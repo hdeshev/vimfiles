@@ -29,7 +29,6 @@ set backspace=indent,eol,start
 
 " show a completion popup for commands
 set wildmenu
-set wildmode=list:longest
 
 " Visual bell "blinks" instead of beeping
 set visualbell
@@ -41,7 +40,8 @@ set browsedir=buffer
 
 "configure a monospace font that supports cyrillic
 if has("unix")
-    set guifont=DejaVu\ Sans\ Mono\ 12
+    "set guifont=DejaVu\ Sans\ Mono\ 12
+    set guifont=Ubuntu\ Mono\ 14
 else
     "set guifont=Consolas:h12
     set guifont=DejaVu_Sans_Mono:h12
@@ -65,7 +65,7 @@ set showcmd		" display incomplete commands
 "setup window
 if has("gui_running")
     "winpos 0 0
-    set lines=55
+    set lines=56
     set columns=140
 endif
 
@@ -113,3 +113,9 @@ let NERDTreeMinimalUI=1
 let NERDTreeDirArrows=1
 
 let g:ackprg="ack-grep -H --nocolor --nogroup --column"
+
+"Stay away from the <Esc> key
+noremap <Esc> <nop>
+inoremap <Esc> <nop>
+cnoremap <Esc> <nop>
+vnoremap <Esc> <nop>
