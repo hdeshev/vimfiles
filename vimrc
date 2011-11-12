@@ -115,7 +115,10 @@ let NERDTreeDirArrows=1
 let g:ackprg="ack-grep -H --nocolor --nogroup --column"
 
 "Stay away from the <Esc> key
-noremap <Esc> <nop>
-inoremap <Esc> <nop>
-cnoremap <Esc> <nop>
-vnoremap <Esc> <nop>
+"Remapping <Esc> breaks console Vim
+if has("gui_running")
+    noremap <Esc> <nop>
+    inoremap <Esc> <nop>
+    cnoremap <Esc> <nop>
+    vnoremap <Esc> <nop>
+endif
