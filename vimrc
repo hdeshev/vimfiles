@@ -83,7 +83,7 @@ endif
 set nocompatible
 
 set t_Co=256
-colorscheme evening
+colorscheme zenburn
 
 "autosave buffers
 set autowrite
