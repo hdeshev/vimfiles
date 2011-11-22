@@ -30,8 +30,8 @@ set backspace=indent,eol,start
 " show a completion popup for commands
 set wildmenu
 
-" Visual bell "blinks" instead of beeping
-set visualbell
+" Don't blink at me!
+set novisualbell
 " And now stop the blinking too.
 set vb t_vb=
 
@@ -94,11 +94,11 @@ setglobal fileencoding=utf-8
 set nobomb
 
 "don't litter with annoying files when opening a file
-" set nobackup
-" set nowritebackup
-" set noswapfile
-set backupdir=~/.vim/tmp,/tmp
-set directory=~/.vim/tmp,/tmp
+set nobackup
+set nowritebackup
+set noswapfile
+" set backupdir=~/.vim/tmp,/tmp
+" set directory=~/.vim/tmp,/tmp
 
 "Hide abandoned buffers in order to not lose undo history.
 set hidden
