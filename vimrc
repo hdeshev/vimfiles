@@ -71,7 +71,7 @@ endif
 
 set ttyfast
 set laststatus=2
- 
+
 if has("unix")
     source ~/.vim/shortcuts.vim
     source ~/.vim/filetypes.vim
@@ -108,6 +108,10 @@ set history=1000
 "look for tags files next to the current file, in the Vim current
 "folder, and the special Lift 2.3 tags.
 set tags=./tags,tags
+
+" color trailing whitespace in red
+highlight TrailingWhiteSpace ctermbg=red guibg=red
+match TrailingWhiteSpace /\s\+$/
 
 let NERDTreeMinimalUI=1
 let NERDTreeDirArrows=1
