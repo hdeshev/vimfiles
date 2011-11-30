@@ -109,9 +109,8 @@ set history=1000
 "folder, and the special Lift 2.3 tags.
 set tags=./tags,tags
 
-" color trailing whitespace in red
-highlight TrailingWhiteSpace ctermbg=red guibg=red
-match TrailingWhiteSpace /\s\+$/
+" show trailing whitespace as dots
+set list listchars=tab:\ \ ,trail:·
 
 let NERDTreeMinimalUI=1
 let NERDTreeDirArrows=1
