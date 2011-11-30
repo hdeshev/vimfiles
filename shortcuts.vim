@@ -11,13 +11,11 @@ map <F4> :BufExplorer<CR>
 imap <F4> <Esc>:BufExplorer<CR>
 map <F1> :NERDTreeToggle<CR>
 map <S-F1> :NERDTreeFind<CR>
-map O1;2P :NERDTreeFind<CR>
 imap <F1> <Esc>:NERDTreeToggle<CR>
 nmap <silent> <unique> <Leader>a :Ack
 map <silent> <unique> <Leader>f :CommandT<CR>
 nmap <silent> <unique> <Leader>t :tag
 map <S-F3> :!ctags -R<CR>
-map O1;2R :!ctags -R<CR>
 map <F8> :cnext<CR>
 map <S-F8> :cprev<CR>
 "save
@@ -30,12 +28,15 @@ imap <C-S> <Esc>:wa<CR>
 "copy/paste to other apps
 map <silent><Leader>y "+y
 map <silent><Leader>p "+gP
+imap <silent><Leader>p <C-o>"+gP
+map <C-INSERT> "+y
+imap <C-INSERT> <ESC>"+y
+map <S-INSERT> "+gP
+imap <S-INSERT> <ESC>"+gP
 
 "insert line above insert mode
-imap <M-o> <Esc>O
-map <M-o> <Esc>O
-map o O
-imap o <Esc>O
+imap <M-o> <C-o>O
+map <M-o> O
 
 "Prev/Next methods
 map <M-p> [m
