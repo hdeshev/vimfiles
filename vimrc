@@ -114,5 +114,6 @@ set list listchars=tab:\ \ ,trail:·
 
 let NERDTreeMinimalUI=1
 let NERDTreeDirArrows=1
+let NERDTreeQuitOnOpen=1
 
 let g:ackprg="ack-grep -H --nocolor --nogroup --column"
