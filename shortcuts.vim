@@ -16,12 +16,23 @@ imap <F1> <Esc>:NERDTreeToggle<CR>
 nmap <silent> <unique> <Leader>a :Ack
 map <silent> <unique> <Leader>f :CommandT<CR>
 nmap <silent> <unique> <Leader>t :tag
-map <S-F3> :!ctags -R<CR>
+map <S-F3> :call GenerateTags()<CR>
 map <F8> :cnext<CR>
 map <S-F8> :cprev<CR>
 "save
 map <C-S> :wa<CR>
 imap <C-S> <Esc>:wa<CR>
+
+function GenerateTags()
+    let l:ctagsCmd = "ctags -R"
+    " use .ctags-exclude in the current dir if it exists
+	if getfperm(".ctags-exclude") != ""
+        let l:ctagsCmd = l:ctagsCmd . " --exclude=@.ctags-exclude"
+	endif
+    echo "Generating tags: " . l:ctagsCmd
+    call system(l:ctagsCmd)
+endfunction
+
 
 "replace word under cursor (ask for confirmation)
 :nnoremap <Leader>r :%s/\<<C-r><C-w>\>//gc<Left><Left><Left>
