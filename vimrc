@@ -22,7 +22,6 @@ syntax on
 set ignorecase
 set hlsearch
 set incsearch
-set gdefault
 
 " allow backspacing over everything in insert mode
 set backspace=indent,eol,start
