@@ -82,7 +82,7 @@ endif
 set nocompatible
 
 set t_Co=256
-colorscheme zenburn
+colorscheme badwolf
 
 "autosave buffers
 set autowrite
