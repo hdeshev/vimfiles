@@ -12,7 +12,7 @@
 setlocal indentexpr=GetScalaIndent()
 setlocal indentkeys=0{,0},0),!^F,<>>,o,O,e,=case,<CR>
 
-#Hristo: add sw=2 ts=2 et
+" Hristo: add sw=2 ts=2 et
 setlocal autoindent sw=2 ts=2 et
 
 "if exists("*GetScalaIndent")
