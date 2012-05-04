@@ -1,6 +1,5 @@
 " load pathogen - the vim bundle manager
-call pathogen#runtime_append_all_bundles()
-call pathogen#helptags()
+call pathogen#infect()
 
 "completion
 set completeopt=menuone
