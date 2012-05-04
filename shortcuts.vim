@@ -19,6 +19,7 @@ nmap <silent> <unique> <Leader>t :tag
 map <S-F3> :call GenerateTags()<CR>
 map <F8> :cnext<CR>
 map <S-F8> :cprev<CR>
+map <F9> :!jshint %<CR>
 "save
 map <C-S> :wa<CR>
 imap <C-S> <Esc>:wa<CR>
