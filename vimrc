@@ -22,6 +22,11 @@ set ignorecase
 set hlsearch
 set incsearch
 
+" Tmux/terminal-related
+set notimeout
+set ttimeout
+set timeoutlen=50
+
 " allow backspacing over everything in insert mode
 set backspace=indent,eol,start
 
