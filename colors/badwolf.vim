@@ -410,6 +410,19 @@ call s:HL('cssIdentifier', 'orange', '', 'bold')
 call s:HL('cssClassName', 'orange', '', 'none')
 
 " }}}
+" Diff {{{
+
+call s:HL('gitDiff', 'lightgravel', '',)
+
+call s:HL('diffRemoved', 'dress', '',)
+call s:HL('diffAdded', 'lime', '',)
+call s:HL('diffFile', 'coal', 'taffy', 'bold')
+call s:HL('diffNewFile', 'coal', 'taffy', 'bold')
+
+call s:HL('diffLine', 'coal', 'orange', 'bold')
+call s:HL('diffSubname', 'orange', '', 'none')
+
+" }}}
 " Django Templates {{{
 
 call s:HL('djangoArgument', 'dirtyblonde', '',)
@@ -428,6 +441,7 @@ call s:HL('htmlEndTag', 'darkroast', 'bg', 'none')
 " Tag names
 call s:HL('htmlTagName',        'coffee', '', 'bold')
 call s:HL('htmlSpecialTagName', 'coffee', '', 'bold')
+call s:HL('htmlSpecialChar',    'lime',   '', 'none')
 
 " Attributes
 call s:HL('htmlArg', 'coffee', '', 'none')
@@ -477,6 +491,8 @@ call s:HL('markdownHeadingRule', 'lightgravel', '', 'bold')
 call s:HL('markdownHeadingDelimiter', 'lightgravel', '', 'bold')
 call s:HL('markdownOrderedListMarker', 'lightgravel', '', 'bold')
 call s:HL('markdownListMarker', 'lightgravel', '', 'bold')
+call s:HL('markdownItalic', 'snow', '', 'bold')
+call s:HL('markdownBold', 'snow', '', 'bold')
 call s:HL('markdownH1', 'orange', '', 'bold')
 call s:HL('markdownH2', 'lime', '', 'bold')
 call s:HL('markdownH3', 'lime', '', 'none')
@@ -495,17 +511,24 @@ call s:HL('markdownCode', 'dirtyblonde', '', 'none')
 call s:HL('markdownCodeBlock', 'dirtyblonde', '', 'none')
 
 " }}}
+" MySQL {{{
+
+call s:HL('mysqlSpecial', 'dress', '', 'bold')
+
+" }}}
 " Python {{{
 
 hi def link pythonOperator Operator
-call s:HL('pythonBuiltin',    'dress')
-call s:HL('pythonBuiltinObj', 'dress')
+call s:HL('pythonBuiltin',     'dress')
+call s:HL('pythonBuiltinObj',  'dress')
 call s:HL('pythonBuiltinFunc', 'dress')
-call s:HL('pythonEscape',     'dress')
-call s:HL('pythonException',  'lime', '', 'bold')
-call s:HL('pythonExceptions', 'lime', '', 'none')
-call s:HL('pythonPrecondit', 'lime', '', 'none')
-call s:HL('pythonDecorator',  'taffy', '', 'none')
+call s:HL('pythonEscape',      'dress')
+call s:HL('pythonException',   'lime', '', 'bold')
+call s:HL('pythonExceptions',  'lime', '', 'none')
+call s:HL('pythonPrecondit',   'lime', '', 'none')
+call s:HL('pythonDecorator',   'taffy', '', 'none')
+call s:HL('pythonRun',         'gravel', '', 'bold')
+call s:HL('pythonCoding',      'gravel', '', 'bold')
 
 " }}}
 " SLIMV {{{
