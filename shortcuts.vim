@@ -4,6 +4,7 @@ map <S-F4> :cprev<CR>
 
 "buffers
 map <C-F4> :bd<CR>
+map <C-w> :bd<CR>
 map <F6> :bn<CR>
 map <S-F6> :bp<CR>
 map <F5> :!xdg-open %<CR>
