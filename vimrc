@@ -88,7 +88,7 @@ endif
 set nocompatible
 
 set t_Co=256
-colorscheme badwolf
+colorscheme evening
 
 "autosave buffers
 set autowrite
