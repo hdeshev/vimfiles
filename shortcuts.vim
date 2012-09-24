@@ -15,7 +15,9 @@ map <F1> :NERDTreeToggle<CR>
 map <S-F1> :NERDTreeFind<CR>
 imap <F1> <Esc>:NERDTreeToggle<CR>
 nmap <silent> <unique> <Leader>a :Ack
-map <silent> <unique> <Leader>f :CommandT<CR>
+" make sure you have your wildignore properly set to ignore unneeded files in
+" projects
+map <unique> <Leader>f :e **/*
 nmap <silent> <unique> <Leader>t :tag
 map <S-F3> :call GenerateTags()<CR>
 map <F8> :cnext<CR>

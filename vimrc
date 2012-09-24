@@ -33,6 +33,8 @@ set backspace=indent,eol,start
 " show a completion popup for commands
 set wildmenu
 
+set wildignore+=*/tmp/*,*/venv/*,*.so,*.swp,*.bak,*.min.*js,*.zip     " MacOSX/Linux
+
 " Don't blink at me!
 set novisualbell
 " And now stop the blinking too.
