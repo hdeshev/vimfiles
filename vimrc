@@ -33,7 +33,7 @@ set backspace=indent,eol,start
 " show a completion popup for commands
 set wildmenu
 
-set wildignore+=*/tmp/*,*/venv/*,*.so,*.swp,*.bak,*.min.*js,*.zip     " MacOSX/Linux
+set wildignore+=*/tmp/*,*/venv/*,*.so,*.swp,*.bak,*.pyc,*.pyo,*.min.*js,*.zip
 
 " Don't blink at me!
 set novisualbell
