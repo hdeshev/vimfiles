@@ -42,8 +42,8 @@ endfunction
 
 "copy/paste to other apps
 map <silent><Leader>y "+y
-map <silent><Leader>p "+gP
-imap <silent><Leader>p <C-o>"+gP
+map <silent><Leader>p "+gp
+imap <silent><Leader>p <C-o>"+gp
 map <C-INSERT> "+y
 imap <C-INSERT> <ESC>"+y
 map <S-INSERT> "+gP
