@@ -21,6 +21,9 @@ au BufRead,BufNewFile *.sbt setf scala
 " For all text files set 'textwidth' to 78 characters.
 autocmd FileType text setlocal textwidth=78
 
+" Fix HTML indent on Enter key
+autocmd FileType html setlocal indentkeys-=*<Return>
+
 " When editing a file, always jump to the last known cursor position.
 " Don't do it when the position is invalid or when inside an event handler
 " (happens when dropping a file on gvim).
