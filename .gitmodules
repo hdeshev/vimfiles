@@ -31,3 +31,6 @@
 [submodule "bundle/vim-commaobject"]
 	path = bundle/vim-commaobject
 	url = https://github.com/austintaylor/vim-commaobject
+[submodule "bundle/python-mode"]
+	path = bundle/python-mode
+	url = git://github.com/klen/python-mode.git

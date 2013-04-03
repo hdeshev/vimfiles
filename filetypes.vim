@@ -21,6 +21,9 @@ au BufRead,BufNewFile *.sbt setf scala
 " For all text files set 'textwidth' to 78 characters.
 autocmd FileType text setlocal textwidth=78
 
+" Override python-mode's fascist line number setting
+autocmd FileType python setlocal nonumber
+
 " Fix HTML indent on Enter key
 autocmd FileType html setlocal indentkeys-=*<Return>
 
