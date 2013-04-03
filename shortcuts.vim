@@ -7,7 +7,7 @@ map <C-F4> :bd<CR>
 map <F6> :bn<CR>
 map <S-F6> :bp<CR>
 map <F5> :!xdg-open %<CR>
-map <S-F5> :!flake8 --ignore=E501,E126,E127,E128 %<CR>
+map <S-F5> :!flake8 --ignore=E501,E401,E124,E126,E127,E128 %<CR>
 map <F7> :tn<CR>
 map <F4> :BufExplorer<CR>
 imap <F4> <Esc>:BufExplorer<CR>
@@ -44,7 +44,7 @@ endfunction
 "copy/paste to other apps
 map <silent><Leader>y "+y
 map <silent><Leader>p "+gp
-imap <silent><Leader>p <C-o>"+gp
+imap <silent><Leader>p <C-o>"+gP
 map <C-INSERT> "+y
 imap <C-INSERT> <ESC>"+y
 map <S-INSERT> "+gP
