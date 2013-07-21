@@ -114,9 +114,9 @@ set hidden
 "Moar history!
 set history=1000
 
-"look for tags files next to the current file, in the Vim current
-"folder, and the special Lift 2.3 tags.
-set tags=./tags,tags
+"look for tags files in the current folder and work up
+"the dir tree if not found.
+set tags=./tags;/
 
 " show trailing whitespace as dots
 set list listchars=tab:\ \ ,trail:·
