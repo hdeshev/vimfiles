@@ -34,3 +34,6 @@
 [submodule "bundle/python-mode"]
 	path = bundle/python-mode
 	url = git://github.com/klen/python-mode.git
+[submodule "bundle/vim-gnupg"]
+	path = bundle/vim-gnupg
+	url = git@github.com:jamessan/vim-gnupg.git
