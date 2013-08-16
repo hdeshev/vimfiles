@@ -1,0 +1,4 @@
+#!/bin/sh
+
+source /opt/virtualenvs/lints/bin/activate
+flake8 --ignore=E501,E401,E124,E126,E127,E128 $*
