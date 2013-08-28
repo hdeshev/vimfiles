@@ -14,7 +14,8 @@ imap <F4> <Esc>:BufExplorer<CR>
 map <F1> :NERDTreeToggle<CR>
 map <S-F1> :NERDTreeFind<CR>
 imap <F1> <Esc>:NERDTreeToggle<CR>
-nmap <silent> <unique> <Leader>a :Ack
+nmap <silent> <unique> <Leader>a :Ack!
+nmap <silent> <unique> <Leader>g :AckFile
 " make sure you have your wildignore properly set to ignore unneeded files in
 " projects
 map <unique> <Leader>f :e **/*
