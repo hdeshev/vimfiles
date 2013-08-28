@@ -33,7 +33,7 @@ set backspace=indent,eol,start
 " show a completion popup for commands
 set wildmenu
 
-set wildignore+=*/tmp/*,*/venv/*,*.so,*.swp,*.bak,*.pyc,*.pyo,*.min.*js,*.zip
+set wildignore+=*/tmp/*,*/venv/*,*/CACHE/*,*.so,*.swp,*.bak,*.pyc,*.pyo,*.min.*js,*.zip
 
 " Don't blink at me!
 set novisualbell
@@ -127,6 +127,7 @@ let NERDTreeQuitOnOpen=1
 
 let g:EasyMotion_keys = 'abcdefghijklmnopqrstuvwxyz'
 
-let g:ackprg="ack -H --nocolor --nogroup --column"
+"let g:ackprg="ack --nocolor --nogroup"
+let g:ackhighlight=1
 
 let g:GPGDefaultRecipients = ["hristo@deshev.com"]
