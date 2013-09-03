@@ -13,7 +13,7 @@ map <F7> :tn<CR>
 map <F4> :BufExplorer<CR>
 imap <F4> <Esc>:BufExplorer<CR>
 map <F1> :NERDTreeToggle<CR>
-map <F2> :QFix<CR>
+map <F2> :cclose<CR>:lclose<CR>:NERDTreeClose<CR><C-w>o
 map <S-F1> :NERDTreeFind<CR>
 imap <F1> <Esc>:NERDTreeToggle<CR>
 nmap <silent> <unique> <Leader>a :Ack!
