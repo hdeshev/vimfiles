@@ -131,3 +131,8 @@ let g:EasyMotion_keys = 'abcdefghijklmnopqrstuvwxyz'
 let g:ackhighlight=1
 
 let g:GPGDefaultRecipients = ["hristo@deshev.com"]
+
+let g:syntastic_mode_map = { 'mode': 'passive' }
+let g:syntastic_always_populate_loc_list = 1
+let g:syntastic_auto_loc_list = 2
+let g:syntastic_python_flake8_args="--ignore=E501,E401,E124,E126,E127,E128"
