@@ -34,6 +34,7 @@ set backspace=indent,eol,start
 set wildmenu
 
 set wildignore+=*/tmp/*,*/venv/*,*/CACHE/*,*.so,*.swp,*.bak,*.pyc,*.pyo,*.min.*js,*.zip
+let NERDTreeIgnore=['^tmp$', '^venv$', '^CACHE$', '\.so$', '\.swp$', '\.py[co]$', '\.min\.js$', '\.zip$']
 
 " Don't blink at me!
 set novisualbell
