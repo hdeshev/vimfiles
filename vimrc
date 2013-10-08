@@ -33,6 +33,7 @@ set backspace=indent,eol,start
 " show a completion popup for commands
 set wildmenu
 
+set wildignorecase "case-insensitive filename completion
 set wildignore+=*/tmp/*,*/venv/*,*/CACHE/*,*.so,*.swp,*.bak,*.pyc,*.pyo,*.min.*js,*.zip
 let NERDTreeIgnore=['^tmp$', '^venv$', '^CACHE$', '\.so$', '\.swp$', '\.py[co]$', '\.min\.js$', '\.zip$']
 
