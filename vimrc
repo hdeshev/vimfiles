@@ -81,14 +81,10 @@ endif
 set ttyfast
 set laststatus=2
 
-if has("unix")
-    source ~/.vim/shortcuts.vim
-    source ~/.vim/filetypes.vim
-    source ~/.vim/python.vim
-else
-    source ~/vimfiles/shortcuts.vim
-    source ~/vimfiles/python.vim
-endif
+source ~/.vim/shortcuts.vim
+source ~/.vim/filetypes.vim
+source ~/.vim/python.vim
+source ~/.vim/journal.vim
 
 set nocompatible
 
