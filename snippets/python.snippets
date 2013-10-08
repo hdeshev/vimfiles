@@ -1,18 +1,17 @@
 snippet fut
 	from __future__ import absolute_import, division, print_function, unicode_literals
-
 snippet !#
 	#!/usr/bin/env python
-
 snippet utf
 	# -*- coding: utf-8
-
 snippet ipp
 	from pprint import pprint
-
 snippet pp
 	pprint(${1})
-
+snippet dp
+	print('${1:var}: `'{}'`'.format(${2:var}))
 snippet syslog
 	from syslog import syslog
 	syslog(${1})
+snippet pdb
+	import pdb; pdb.set_trace()
