@@ -43,3 +43,6 @@
 [submodule "bundle/javascript-indent"]
 	path = bundle/javascript-indent
 	url = git@github.com:vim-scripts/JavaScript-Indent.git
+[submodule "bundle/vim-taglist"]
+	path = bundle/vim-taglist
+	url = git@github.com:hdeshev/vim-taglist.git

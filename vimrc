@@ -134,3 +134,16 @@ let g:syntastic_mode_map = { 'mode': 'passive' }
 let g:syntastic_always_populate_loc_list = 1
 let g:syntastic_auto_loc_list = 2
 let g:syntastic_python_flake8_args="--ignore=E501,E401,E124,E126,E127,E128"
+
+let g:Tlist_Close_On_Select = 1
+"let g:Tlist_Use_Horiz_Window = 1
+let g:Tlist_WinWidth = 50
+let g:Tlist_Compact_Format = 1
+let g:Tlist_Enable_Fold_Column = 0
+let g:TlistHighlightTag = 0
+let g:Tlist_Auto_Highlight_Tag = 0
+let g:Tlist_GainFocus_On_ToggleOpen = 1
+let g:Tlist_Use_Right_Window = 0
+let g:Tlist_Show_Menu = 1
+let g:Tlist_Highlight_Tag_On_BufEnter = 1
+let g:Tlist_Show_One_File = 1
