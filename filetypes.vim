@@ -9,6 +9,8 @@ au BufNewFile,BufRead *.xaml setf xml
 au BufNewFile,BufRead *.targets setf xml
 au BufNewFile,BufRead *.config setf xml
 au BufNewFile,BufRead *.*proj setf xml
+au BufNewFile,BufRead *.*django setf html
+au BufNewFile,BufRead *.*dust setf html
 au BufNewFile,BufRead *.*aspx setf html
 au BufNewFile,BufRead *.*ascx setf html
 au BufWinEnter,BufNewFile,BufRead *.ssp setf html
