@@ -126,6 +126,7 @@ let NERDTreeQuitOnOpen=1
 let g:EasyMotion_keys = 'abcdefghijklmnopqrstuvwxyz'
 
 "let g:ackprg="ack --nocolor --nogroup"
+let g:ackprg = 'ag --nogroup --nocolor --column'
 let g:ackhighlight=1
 
 let g:GPGDefaultRecipients = ["hristo@deshev.com"]
