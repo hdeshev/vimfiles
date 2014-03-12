@@ -8,7 +8,8 @@ map <F6> :bn<CR>
 map <S-F6> :bp<CR>
 map <F5> :SyntasticCheck<CR>
 nmap <silent> <unique> <Leader>s :Errors<CR>
-map <S-F5> :!~/.vim/flake8 %<CR>
+map <S-F5> :!autopep8 --max-line-length=120 -i %<CR>
+map <A-F5> :!autopep8 --max-line-length=120 -<CR>
 map <F7> :tn<CR>
 map <F4> :BufExplorer<CR>
 imap <F4> <Esc>:BufExplorer<CR>
