@@ -27,7 +27,8 @@ map <silent><F3> :cclose<CR>:lclose<CR>:NERDTreeClose<CR>:TlistClose<CR><C-w>o
 map <S-F3> :call GenerateTags()<CR>
 map <F8> :cnext<CR>
 map <S-F8> :cprev<CR>
-map <F9> :!jshint %<CR>
+map <silent> <F9> :TmuxRunTests<CR>
+
 "save
 map <C-S> :wa<CR>
 imap <C-S> <Esc>:wa<CR>

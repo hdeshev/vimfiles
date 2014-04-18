@@ -82,10 +82,11 @@ endif
 set ttyfast
 set laststatus=2
 
+source ~/.vim/journal.vim
+source ~/.vim/tmux.vim
 source ~/.vim/shortcuts.vim
 source ~/.vim/filetypes.vim
 source ~/.vim/python.vim
-source ~/.vim/journal.vim
 
 set nocompatible
 
