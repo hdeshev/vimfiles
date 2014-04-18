@@ -150,3 +150,8 @@ let g:Tlist_Show_Menu = 1
 let g:Tlist_Highlight_Tag_On_BufEnter = 1
 let g:Tlist_Show_One_File = 1
 let g:Tlist_Inc_Winwidth = 0
+
+try
+    source .project.vim
+catch
+endtry
