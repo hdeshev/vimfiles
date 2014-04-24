@@ -24,7 +24,7 @@ nmap <silent> <unique> <Leader>g :AckFile
 map <unique> <Leader>f :e **/*
 nmap <silent> <unique> <Leader>t :tag
 map <silent><F3> :cclose<CR>:lclose<CR>:NERDTreeClose<CR>:TagbarClose<CR><C-w>o
-map <S-F3> :call GenerateTags()<CR>
+map <S-F3> :call tags#GenerateTags()<CR>
 map <F8> :cnext<CR>
 map <S-F8> :cprev<CR>
 map <silent> <F9> :TmuxRunTests<CR>
@@ -32,17 +32,6 @@ map <silent> <F9> :TmuxRunTests<CR>
 "save
 map <C-S> :wa<CR>
 imap <C-S> <Esc>:wa<CR>
-
-function GenerateTags()
-    let l:ctagsCmd = "ctags -R"
-    " use .ctags-exclude in the current dir if it exists
-	if getfperm(".ctags-exclude") != ""
-        let l:ctagsCmd = l:ctagsCmd . " --exclude=@.ctags-exclude"
-	endif
-    echo "Generating tags: " . l:ctagsCmd
-    call system(l:ctagsCmd)
-endfunction
-
 
 "replace word under cursor (ask for confirmation)
 :nnoremap <Leader>r :%s/\<<C-r><C-w>\>//gc<Left><Left><Left>
