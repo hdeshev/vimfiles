@@ -27,7 +27,9 @@ map <silent><F3> :cclose<CR>:lclose<CR>:NERDTreeClose<CR>:TagbarClose<CR><C-w>o
 map <S-F3> :call tags#GenerateTags()<CR>
 map <F8> :cnext<CR>
 map <S-F8> :cprev<CR>
+
 map <silent> <F9> :TmuxRunTests<CR>
+imap <silent> <F9> <Esc>:TmuxRunTests<CR>
 
 "save
 map <C-S> :wa<CR>
