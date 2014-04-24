@@ -14,7 +14,7 @@ map <F7> :tn<CR>
 map <F4> :BufExplorer<CR>
 imap <F4> <Esc>:BufExplorer<CR>
 map <silent> <F1> :NERDTreeToggle<CR>
-nnoremap <silent> <F2> :TlistToggle<CR>
+nnoremap <silent> <F2> :TagbarToggle<CR>
 map <S-F1> :NERDTreeFind<CR>
 imap <F1> <Esc>:NERDTreeToggle<CR>
 nmap <silent> <unique> <Leader>a :Ack!
@@ -23,7 +23,7 @@ nmap <silent> <unique> <Leader>g :AckFile
 " projects
 map <unique> <Leader>f :e **/*
 nmap <silent> <unique> <Leader>t :tag
-map <silent><F3> :cclose<CR>:lclose<CR>:NERDTreeClose<CR>:TlistClose<CR><C-w>o
+map <silent><F3> :cclose<CR>:lclose<CR>:NERDTreeClose<CR>:TagbarClose<CR><C-w>o
 map <S-F3> :call GenerateTags()<CR>
 map <F8> :cnext<CR>
 map <S-F8> :cprev<CR>
