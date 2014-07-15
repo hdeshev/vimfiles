@@ -7,6 +7,8 @@ snippet utf
 snippet init
 	def __init__(self, ${1}):
 		${2:pass}
+snippet p
+	print('${1}')
 snippet ipp
 	from pprint import pprint
 snippet pp
@@ -18,3 +20,6 @@ snippet syslog
 	syslog(${1})
 snippet pdb
 	import pdb; pdb.set_trace()
+snippet test_
+	def test_${1}(self):
+		${2:pass}
