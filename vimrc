@@ -34,8 +34,8 @@ set backspace=indent,eol,start
 set wildmenu
 
 set wildignorecase "case-insensitive filename completion
-set wildignore+=*/tmp/*,*/venv/*,*/CACHE/*,*.so,*.swp,*.bak,*.pyc,*.pyo,*.min.*js,*.zip
-let NERDTreeIgnore=['^tmp$', '^venv$', '^CACHE$', '\.so$', '\.swp$', '\.py[co]$', '\.min\.js$', '\.zip$']
+set wildignore+=*.so,*.swp,*.bak,*.pyc,*.pyo,*.min.*js,*.zip
+let NERDTreeIgnore=['\.swp$', '\.py[co]$']
 
 " Don't blink at me!
 set novisualbell
@@ -135,7 +135,7 @@ let g:GPGDefaultRecipients = ["hristo@deshev.com"]
 let g:syntastic_mode_map = { 'mode': 'passive' }
 let g:syntastic_always_populate_loc_list = 1
 let g:syntastic_auto_loc_list = 2
-let g:syntastic_python_flake8_args="--ignore=E501,E401,E124,E126,E127,E128"
+let g:syntastic_python_flake8_args="--ignore=E501,E401,E124,E126,E127,E128,E261,E265"
 
 let g:tagbar_left = 1
 let g:tagbar_autoclose = 1
@@ -144,6 +144,6 @@ let g:tagbar_compact = 1
 let g:tagbar_autoshowtag = 1
 
 try
-    source .project.vim
+    source .vimrc
 catch
 endtry
