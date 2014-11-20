@@ -25,7 +25,7 @@ map <unique> <Leader>f :e **/*
 nmap <silent> <unique> <Leader>t :tag
 map <silent><F3> :cclose<CR>:lclose<CR>:NERDTreeClose<CR>:TagbarClose<CR><C-w>o
 map <S-F3> :call tags#GenerateTags()<CR>
-map <silent><unique><Leader>r :call tools#Rename()<CR>
+map <silent><unique><Leader>rr :call tools#Rename()<CR>
 map <F8> :cnext<CR>
 map <S-F8> :cprev<CR>
 
