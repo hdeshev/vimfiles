@@ -4,9 +4,14 @@ snippet !#
 	#!/usr/bin/env python
 snippet utf
 	# -*- coding: utf-8
+snippet noqa
+	# flake8: noqa
 snippet init
 	def __init__(self, ${1}):
 		${2:pass}
+snippet defm
+	def ${1:mname}(self${2}):
+		${3:pass}
 snippet p
 	print('${1}')
 snippet ipp
