@@ -21,13 +21,14 @@ nmap <silent> <unique> <Leader>a :Ack!
 nmap <silent> <unique> <Leader>g :AckFile
 " make sure you have your wildignore properly set to ignore unneeded files in
 " projects
-map <unique> <Leader>f :e **/*
+" map <unique> <Leader>f :e **/*
 nmap <silent> <unique> <Leader>t :tag
 map <silent><F3> :cclose<CR>:lclose<CR>:NERDTreeClose<CR>:TagbarClose<CR><C-w>o
 map <S-F3> :call tags#GenerateTags()<CR>
 map <silent><unique><Leader>rr :call tools#Rename()<CR>
 map <F8> :cnext<CR>
 map <S-F8> :cprev<CR>
+map <silent><unique><Leader>pp :CtrlPClearAllCaches<CR>
 
 map <silent> <F9> :TmuxRunTests<CR>
 imap <silent> <F9> <Esc>:TmuxRunTests<CR>
