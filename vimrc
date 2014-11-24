@@ -91,7 +91,11 @@ source ~/.vim/python.vim
 set nocompatible
 
 set t_Co=256
-colorscheme evening
+"colorscheme evening
+
+let g:solarized_termcolors = 256
+set background=dark
+colorscheme solarized
 
 "autosave buffers
 set autowrite
