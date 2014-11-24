@@ -34,7 +34,7 @@ set backspace=indent,eol,start
 set wildmenu
 
 set wildignorecase "case-insensitive filename completion
-set wildignore+=*.so,*.swp,*.bak,*.pyc,*.pyo,*.min.*js,*.zip
+set wildignore+=*.so,*.swp,*.bak,*.pyc,*.pyo,*.min.*js,*.min.*css,*.zip
 let NERDTreeIgnore=['\.swp$', '\.py[co]$']
 
 " Don't blink at me!
@@ -146,6 +146,8 @@ let g:tagbar_autoclose = 1
 let g:tagbar_autofocus = 1
 let g:tagbar_compact = 1
 let g:tagbar_autoshowtag = 1
+
+let g:ctrlp_working_path_mode = ''
 
 try
     source .vimrc
