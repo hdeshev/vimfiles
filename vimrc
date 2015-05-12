@@ -34,7 +34,7 @@ set backspace=indent,eol,start
 set wildmenu
 
 set wildignorecase "case-insensitive filename completion
-set wildignore+=*.so,*.swp,*.bak,*.pyc,*.pyo,*.min.*js,*.min.*css,*.zip
+set wildignore+=tags,*.so,*.swp,*.bak,*.pyc,*.pyo,*.min.*js,*.min.*css,*.zip
 let NERDTreeIgnore=['\.swp$', '\.py[co]$']
 
 " Don't blink at me!
@@ -91,11 +91,8 @@ source ~/.vim/python.vim
 set nocompatible
 
 set t_Co=256
-"colorscheme evening
-
-let g:solarized_termcolors = 256
 set background=dark
-colorscheme solarized
+colorscheme evening
 
 "autosave buffers
 set autowrite
@@ -148,6 +145,12 @@ let g:tagbar_compact = 1
 let g:tagbar_autoshowtag = 1
 
 let g:ctrlp_working_path_mode = ''
+" use ag for file searches if there (faster)
+if executable('ag')
+  let g:ctrlp_user_command = 'ag %s -l --nocolor -g ""'
+endif
+
+let g:typescript_indent_disable = 1
 
 try
     source .vimrc

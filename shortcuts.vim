@@ -1,11 +1,5 @@
-"next/prev
-map <F4> :cnext<CR>
-map <S-F4> :cprev<CR>
-
 "buffers
 map <C-F4> :bd<CR>
-map <F6> :bn<CR>
-map <S-F6> :bp<CR>
 map <F5> :SyntasticCheck<CR>
 nmap <silent> <unique> <Leader>s :Errors<CR>
 map <S-F5> :!autopep8 --max-line-length=120 -i %<CR>
