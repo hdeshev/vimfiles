@@ -24,6 +24,9 @@ au BufRead,BufNewFile *supervisor*.conf setf dosini
 " For all text files set 'textwidth' to 78 characters.
 autocmd FileType text setlocal textwidth=78
 
+" Fix typescript 2-space indents
+autocmd FileType typescript setlocal shiftwidth=4 tabstop=4
+
 " Override python-mode's fascist line number setting
 autocmd FileType python setlocal nonumber
 
