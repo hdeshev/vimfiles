@@ -144,6 +144,17 @@ let g:tagbar_autofocus = 1
 let g:tagbar_compact = 1
 let g:tagbar_autoshowtag = 1
 
+let g:tagbar_type_typescript = {
+    \ 'ctagstype' : 'typescript',
+    \ 'kinds'     : [
+        \ 'c:classes',
+        \ 'i:interfaces',
+        \ 'm:members',
+        \ 'f:functions',
+        \ 'v:variables',
+    \ ]
+\ }
+
 let g:ctrlp_working_path_mode = ''
 " use ag for file searches if there (faster)
 if executable('ag')
