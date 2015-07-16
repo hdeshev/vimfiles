@@ -106,6 +106,7 @@ set nobomb
 set nobackup
 set nowritebackup
 set noswapfile
+set nofoldenable
 " set backupdir=~/.vim/tmp,/tmp
 " set directory=~/.vim/tmp,/tmp
 
