@@ -1,3 +1,5 @@
+set shell=/bin/sh " avoid errors caused by using exotic shells e.g. fish
+
 " load pathogen - the vim bundle manager
 call pathogen#infect()
 
