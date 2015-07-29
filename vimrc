@@ -167,6 +167,9 @@ endif
 let g:typescript_indent_disable = 1
 let g:js_indent_typescript = 1
 
+call rainbow_parentheses#activate()
+
+
 try
     source .vimrc
 catch
