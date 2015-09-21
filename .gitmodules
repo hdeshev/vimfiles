@@ -52,3 +52,6 @@
 [submodule "bundle/rainbow_parentheses"]
 	path = bundle/rainbow_parentheses
 	url = git@github.com:junegunn/rainbow_parentheses.vim.git
+[submodule "bundle/javascript-indent"]
+	path = bundle/javascript-indent
+	url = git@github.com:KurtPreston/JavaScript-Indent.git
