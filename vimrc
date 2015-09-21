@@ -37,7 +37,8 @@ set wildmenu
 
 set wildignorecase "case-insensitive filename completion
 set wildignore+=tags,*.so,*.swp,*.bak,*.pyc,*.pyo,*.min.*js,*.min.*css,*.zip
-let NERDTreeIgnore=['\.swp$', '\.py[co]$']
+
+let g:NERDTreeRespectWildIgnore = 1
 
 " Don't blink at me!
 set novisualbell
