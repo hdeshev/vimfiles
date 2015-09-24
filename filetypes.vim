@@ -5,6 +5,7 @@
 filetype plugin indent on
 
 au BufNewFile,BufRead *.build setf ant
+au BufNewFile,BufRead *.gradle setf groovy
 au BufNewFile,BufRead *.xaml setf xml
 au BufNewFile,BufRead *.targets setf xml
 au BufNewFile,BufRead *.config setf xml
