@@ -148,6 +148,8 @@ let g:tagbar_autofocus = 1
 let g:tagbar_compact = 1
 let g:tagbar_autoshowtag = 1
 
+set showfulltag
+
 " ctags-filter is a wrapper script that filters 'tags' missed by our
 " TypeScript ctags regexes e.g.:
 "
@@ -164,6 +166,7 @@ let g:tagbar_type_typescript = {
     \ ]
 \ }
 
+let g:ctrlp_custom_ignore = '\v[\/](node_modules)$'
 let g:ctrlp_working_path_mode = ''
 " use ag for file searches if there (faster)
 if executable('ag')
