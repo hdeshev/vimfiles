@@ -137,10 +137,21 @@ let g:ackhighlight=1
 
 let g:GPGDefaultRecipients = ["hristo@deshev.com"]
 
+" npm install -g jshint eslint babel-eslint eslint-plugin-react
+"
 let g:syntastic_mode_map = { 'mode': 'passive' }
 let g:syntastic_always_populate_loc_list = 1
 let g:syntastic_auto_loc_list = 2
 let g:syntastic_python_flake8_args="--ignore=E501,E401,E124,E126,E127,E128,E261,E265"
+
+let g:syntastic_error_symbol = "✗"
+let g:syntastic_warning_symbol = "⚠"
+
+let g:syntastic_json_checkers = ["jshint"]
+
+let g:syntastic_javascript_checkers = ["eslint"]
+let g:syntastic_javascript_eslint_exec = 'eslint_d'
+
 
 let g:tagbar_left = 1
 let g:tagbar_autoclose = 1

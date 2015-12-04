@@ -28,6 +28,7 @@ autocmd FileType text setlocal textwidth=78
 
 " Fix typescript 2-space indents
 autocmd FileType typescript setlocal shiftwidth=4 tabstop=4
+autocmd BufRead,BufEnter,BufNew *.ts    let b:syntastic_checkers = ["eslint"]
 
 " Override python-mode's fascist line number setting
 autocmd FileType python setlocal nonumber
