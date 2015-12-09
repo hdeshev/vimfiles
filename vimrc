@@ -123,7 +123,7 @@ set history=1000
 set tags=./tags;/
 
 " show trailing whitespace as dots
-set list listchars=tab:\ \ ,trail:·
+set list listchars=tab:▸\ ,trail:·
 
 let NERDTreeMinimalUI=1
 let NERDTreeDirArrows=1
@@ -137,7 +137,6 @@ let g:ackhighlight=1
 
 let g:GPGDefaultRecipients = ["hristo@deshev.com"]
 
-" npm install -g jshint eslint babel-eslint eslint-plugin-react
 "
 let g:syntastic_mode_map = { 'mode': 'passive' }
 let g:syntastic_always_populate_loc_list = 1
@@ -149,9 +148,7 @@ let g:syntastic_warning_symbol = "⚠"
 
 let g:syntastic_json_checkers = ["jshint"]
 
-let g:syntastic_javascript_checkers = ["eslint"]
-let g:syntastic_javascript_eslint_exec = 'eslint_d'
-
+let g:syntastic_typescript_checkers = ["tslint"]
 
 let g:tagbar_left = 1
 let g:tagbar_autoclose = 1
