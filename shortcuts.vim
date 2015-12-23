@@ -2,8 +2,6 @@
 map <C-F4> :bd<CR>
 map <F5> :SyntasticCheck<CR>
 nmap <silent> <unique> <Leader>s :Errors<CR>
-map <S-F5> :!autopep8 --max-line-length=120 -i %<CR>
-map <A-F5> :!autopep8 --max-line-length=120 -<CR>
 map <F7> :tn<CR>
 map <F4> :BufExplorer<CR>
 imap <F4> <Esc>:BufExplorer<CR>
@@ -11,18 +9,16 @@ map <silent> <F1> :NERDTreeToggle<CR>
 nnoremap <silent> <F2> :TagbarToggle<CR>
 map <S-F1> :NERDTreeFind<CR>
 imap <F1> <Esc>:NERDTreeToggle<CR>
-nmap <silent> <unique> <Leader>a :Ack!
-nmap <silent> <unique> <Leader>g :AckFile
+nmap <silent> <unique> <Leader>f :find
+nmap <silent> <unique> <Leader>g :grep
 " make sure you have your wildignore properly set to ignore unneeded files in
 " projects
 " map <unique> <Leader>f :e **/*
 nmap <silent> <unique> <Leader>t :tag
 map <silent><F3> :cclose<CR>:lclose<CR>:NERDTreeClose<CR>:TagbarClose<CR><C-w>o
 map <S-F3> :call tags#GenerateTags()<CR>
-map <silent><unique><Leader>rr :call tools#Rename()<CR>
 map <F8> :cnext<CR>
 map <S-F8> :cprev<CR>
-map <silent><unique><Leader>pp :CtrlPClearAllCaches<CR>
 
 map <silent> <F9> :TmuxRunTests<CR>
 imap <silent> <F9> <Esc>:TmuxRunTests<CR>

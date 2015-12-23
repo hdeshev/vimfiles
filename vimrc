@@ -37,6 +37,18 @@ set wildmenu
 
 set wildignorecase "case-insensitive filename completion
 set wildignore+=tags,*.so,*.swp,*.bak,*.pyc,*.pyo,*.min.*js,*.min.*css,*.zip
+set wildignore+=*/node_modules/*
+set wildignore+=*/platforms/android/*
+set wildignore+=*/platforms/ios/*
+
+set path=**
+
+if executable('ack-grep')
+  set grepprg=ack-grep\ -s\ -H\ --nogroup\ --nocolor\ --column
+  set grepformat=%f:%l:%c:%m,%f:%l:%m
+endif
+
+autocmd QuickFixCmdPost *grep* cwindow
 
 let g:NERDTreeRespectWildIgnore = 1
 
