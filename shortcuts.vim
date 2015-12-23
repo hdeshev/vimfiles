@@ -11,6 +11,7 @@ map <S-F1> :NERDTreeFind<CR>
 imap <F1> <Esc>:NERDTreeToggle<CR>
 nmap <silent> <unique> <Leader>f :find
 nmap <silent> <unique> <Leader>g :grep
+nmap <silent> <unique> <Leader>gg :grep! "\b<C-R><C-W>\b"<CR>:cw<CR>
 " make sure you have your wildignore properly set to ignore unneeded files in
 " projects
 " map <unique> <Leader>f :e **/*
