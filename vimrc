@@ -186,6 +186,16 @@ let g:tagbar_type_typescript = {
     \ ]
 \ }
 
+let g:tagbar_type_css = {
+    \ 'ctagstype' : 'css',
+    \ 'ctagsbin' : 'ctags',
+    \ 'kinds'     : [
+        \ 'c:class',
+        \ 'i:id',
+        \ 't:tag',
+    \ ]
+\ }
+
 let g:ctrlp_custom_ignore = '\v[\/](node_modules)$'
 let g:ctrlp_working_path_mode = ''
 " use ag for file searches if there (faster)
