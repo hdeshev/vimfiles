@@ -186,6 +186,18 @@ let g:tagbar_type_typescript = {
     \ ]
 \ }
 
+let g:tagbar_type_javascript = {
+    \ 'ctagstype' : 'typescript',
+    \ 'ctagsbin' : 'ctags-filter',
+    \ 'kinds'     : [
+        \ 'c:classes',
+        \ 'i:interfaces',
+        \ 'm:members',
+        \ 'f:functions',
+        \ 'v:variables',
+    \ ]
+\ }
+
 let g:tagbar_type_css = {
     \ 'ctagstype' : 'css',
     \ 'ctagsbin' : 'ctags',
