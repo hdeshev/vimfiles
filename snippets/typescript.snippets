@@ -6,3 +6,8 @@ snippet .
 	this.
 snippet fn
 	function(${1}) { return ${2}; }
+snippet trace
+	import * as trace from "trace";
+
+	trace.setCategories(trace.categories.All);
+	trace.enable();
