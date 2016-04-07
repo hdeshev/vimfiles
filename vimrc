@@ -17,7 +17,7 @@ set smartindent
 set smarttab
 
 "highlighting
-syntax on
+syntax off
 
 " search and replace
 set ignorecase
@@ -50,7 +50,7 @@ endif
 
 autocmd QuickFixCmdPost *grep* cwindow
 
-let g:NERDTreeRespectWildIgnore = 1
+"let g:NERDTreeRespectWildIgnore = 1
 
 " Don't blink at me!
 set novisualbell
@@ -110,7 +110,7 @@ set background=dark
 colorscheme evening
 
 "autosave buffers
-set autowrite
+set autowriteall
 
 "unicode options. we want utf-8 and no BOM symbols
 set encoding=utf-8
@@ -129,13 +129,18 @@ set nofoldenable
 set hidden
 "Moar history!
 set history=1000
+if has('persistent_undo')
+    set undolevels=5000
+    set undodir=$HOME/.vim/tmp
+    set undofile
+endif
 
 "look for tags files in the current folder and work up
 "the dir tree if not found.
 set tags=./tags;/
 
 " show trailing whitespace as dots
-set list listchars=tab:▸\ ,trail:·
+set list listchars=tab:·\ ,trail:·
 
 let NERDTreeMinimalUI=1
 let NERDTreeDirArrows=1
