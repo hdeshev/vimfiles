@@ -17,7 +17,7 @@ set smartindent
 set smarttab
 
 "highlighting
-syntax off
+syntax on
 
 " search and replace
 set ignorecase
@@ -107,7 +107,8 @@ set nocompatible
 
 set t_Co=256
 set background=dark
-colorscheme evening
+let g:nofrils_strbackgrounds=1
+colorscheme nofrils-dark
 
 "autosave buffers
 set autowriteall
