@@ -107,7 +107,6 @@ set nocompatible
 
 set t_Co=256
 set background=dark
-let g:nofrils_strbackgrounds=1
 colorscheme nofrils-dark
 
 "autosave buffers
