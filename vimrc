@@ -145,6 +145,7 @@ set list listchars=tab:·\ ,trail:·
 let NERDTreeMinimalUI=1
 let NERDTreeDirArrows=1
 let NERDTreeQuitOnOpen=1
+let NERDTreeWinSize=1000
 
 let g:EasyMotion_keys = 'abcdefghijklmnopqrstuvwxyz'
 
@@ -222,6 +223,8 @@ endif
 
 let g:typescript_indent_disable = 1
 let g:js_indent_typescript = 1
+
+set rtp+=~/.fzf
 
 try
     source .vimrc

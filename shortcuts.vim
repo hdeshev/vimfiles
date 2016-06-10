@@ -1,5 +1,5 @@
 "buffers
-map <C-F4> :bd<CR>
+map <C-w> :bd<CR>
 map <F5> :SyntasticCheck<CR>
 nmap <silent> <unique> <Leader>s :Errors<CR>
 map <F7> :tn<CR>
@@ -7,9 +7,9 @@ map <F4> :BufExplorer<CR>
 imap <F4> <Esc>:BufExplorer<CR>
 map <silent> <F1> :NERDTreeToggle<CR>
 nnoremap <silent> <F2> :TagbarToggle<CR>
-map <S-F1> :NERDTreeFind<CR>
-imap <F1> <Esc>:NERDTreeToggle<CR>
-nmap <silent> <unique> <Leader>f :find
+map <silent><leader><F1> :NERDTreeFind<CR>
+imap <silent><F1> <Esc>:NERDTreeToggle<CR>
+nmap <silent> <unique> <Leader>f :FZF<CR>
 nmap <silent> <unique> <Leader>g :grep
 nmap <silent> <unique> <Leader>gg :grep! "\b<C-R><C-W>\b"<CR>:cw<CR>
 " make sure you have your wildignore properly set to ignore unneeded files in
