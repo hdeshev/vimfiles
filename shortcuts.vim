@@ -16,8 +16,8 @@ nmap <silent> <unique> <Leader>gg :grep! "\b<C-R><C-W>\b"<CR>:cw<CR>
 " projects
 " map <unique> <Leader>f :e **/*
 nmap <silent> <unique> <Leader>t :tag
-map <silent><F3> :cclose<CR>:lclose<CR>:NERDTreeClose<CR>:TagbarClose<CR><C-w>o
-map <S-F3> :call tags#GenerateTags()<CR>
+map <silent><F3> :cclose<CR>:lclose<CR>:NERDTreeClose<CR>:TagbarClose<CR>
+map <silent><leader><F3> :call tags#GenerateTags()<CR>
 map <F8> :cnext<CR>
 map <S-F8> :cprev<CR>
 
