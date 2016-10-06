@@ -57,6 +57,9 @@ set novisualbell
 " And now stop the blinking too.
 set vb t_vb=
 
+" Enable mouse in GUI and xterms
+set mouse=a
+
 "set the GUI 'current' folder relative to the buffer
 set browsedir=buffer
 
