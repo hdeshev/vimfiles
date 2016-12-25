@@ -17,7 +17,7 @@ set smartindent
 set smarttab
 
 "highlighting
-syntax on
+syntax off
 
 " search and replace
 set ignorecase
