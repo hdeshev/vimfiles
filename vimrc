@@ -217,8 +217,6 @@ let g:tagbar_type_css = {
     \ ]
 \ }
 
-let g:ctrlp_custom_ignore = '\v[\/](node_modules)$'
-let g:ctrlp_working_path_mode = ''
 " use ag for file searches if there (faster)
 if executable('ag')
   let g:ctrlp_user_command = 'ag %s -l --nocolor -g ""'
@@ -228,8 +226,3 @@ let g:typescript_indent_disable = 1
 let g:js_indent_typescript = 1
 
 set rtp+=~/.fzf
-
-try
-    source .vimrc
-catch
-endtry
