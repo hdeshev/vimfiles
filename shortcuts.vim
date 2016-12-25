@@ -5,10 +5,7 @@ nmap <silent> <unique> <Leader>s :Errors<CR>
 map <F7> :tn<CR>
 map <F4> :BufExplorer<CR>
 imap <F4> <Esc>:BufExplorer<CR>
-map <silent> <F1> :NERDTreeToggle<CR>
 nnoremap <silent> <F2> :TagbarToggle<CR>
-map <silent><leader><F1> :NERDTreeFind<CR>
-imap <silent><F1> <Esc>:NERDTreeToggle<CR>
 nmap <silent> <unique> <Leader>f :FZF<CR>
 nmap <silent> <unique> <Leader>g :grep
 nmap <silent> <unique> <Leader>gg :grep! "\b<C-R><C-W>\b"<CR>:cw<CR>
@@ -16,10 +13,15 @@ nmap <silent> <unique> <Leader>gg :grep! "\b<C-R><C-W>\b"<CR>:cw<CR>
 " projects
 " map <unique> <Leader>f :e **/*
 nmap <silent> <unique> <Leader>t :tag
-map <silent><F3> :cclose<CR>:lclose<CR>:NERDTreeClose<CR>:TagbarClose<CR>
+map <silent><F3> :cclose<CR>:lclose<CR>:TagbarClose<CR>
 map <silent><leader><F3> :call tags#GenerateTags()<CR>
 map <F8> :cnext<CR>
 map <S-F8> :cprev<CR>
+
+nnoremap <silent><F1> :call ranger#FileChooser()<CR>
+inoremap <silent><F1> <Esc>:call ranger#FileChooser()<CR>
+nnoremap <silent><leader><F1> :call ranger#FileChooser(expand("%:p:h"))<CR>
+inoremap <silent><leader><F1> <Esc>:call ranger#FileChooser(expand("%:p:h"))<CR>
 
 map <silent> <F9> :TmuxRunTests<CR>
 imap <silent> <F9> <Esc>:TmuxRunTests<CR>
