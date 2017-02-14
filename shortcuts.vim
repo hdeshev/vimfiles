@@ -18,10 +18,10 @@ map <silent><leader><F3> :call tags#GenerateTags()<CR>
 map <F8> :cnext<CR>
 map <S-F8> :cprev<CR>
 
-nnoremap <silent><F1> :call ranger#FileChooser()<CR>
-inoremap <silent><F1> <Esc>:call ranger#FileChooser()<CR>
-nnoremap <silent><leader><F1> :call ranger#FileChooser(expand("%:p:h"))<CR>
-inoremap <silent><leader><F1> <Esc>:call ranger#FileChooser(expand("%:p:h"))<CR>
+nnoremap <silent><F1> :call ranger#FileChooser(expand("%:p:h"))<CR>
+inoremap <silent><F1> <Esc>:call ranger#FileChooser(expand("%:p:h"))<CR>
+nnoremap <silent><leader><F1> :call ranger#FileChooser()<CR>
+inoremap <silent><leader><F1> <Esc>:call ranger#FileChooser()<CR>
 
 map <silent> <F9> :TmuxRunTests<CR>
 imap <silent> <F9> <Esc>:TmuxRunTests<CR>
