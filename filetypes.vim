@@ -22,6 +22,7 @@ au BufRead,BufNewFile *.scala setf scala
 au BufRead,BufNewFile *.sbt setf scala
 au BufRead,BufNewFile *supervisor*.conf setf dosini
 au BufRead,BufNewFile *.es6 setf typescript
+au BufRead,BufNewFile *.json setlocal sw=2 ts=2 et
 
 " For all text files set 'textwidth' to 78 characters.
 autocmd FileType text setlocal textwidth=78
