@@ -43,8 +43,8 @@ set wildignore+=*/platforms/ios/*
 
 set path=**
 
-if executable('ack-grep')
-  set grepprg=ack-grep\ -s\ -H\ --nogroup\ --nocolor\ --column
+if executable('ack')
+  set grepprg=ack\ -s\ -H\ --nogroup\ --nocolor\ --column
   set grepformat=%f:%l:%c:%m,%f:%l:%m
 endif
 
@@ -221,6 +221,10 @@ let g:tagbar_type_css = {
 if executable('ag')
   let g:ctrlp_user_command = 'ag %s -l --nocolor -g ""'
 endif
+
+let g:netrw_banner = 0
+let g:netrw_liststyle = 3
+let g:netrw_sort_sequence = '[\/]$,*'
 
 let g:typescript_indent_disable = 1
 let g:js_indent_typescript = 1
