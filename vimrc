@@ -222,10 +222,6 @@ if executable('ag')
   let g:ctrlp_user_command = 'ag %s -l --nocolor -g ""'
 endif
 
-let g:netrw_banner = 0
-let g:netrw_liststyle = 3
-let g:netrw_sort_sequence = '[\/]$,*'
-
 let g:typescript_indent_disable = 1
 let g:js_indent_typescript = 1
 
