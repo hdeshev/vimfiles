@@ -25,6 +25,7 @@ au BufRead,BufNewFile *.es6 setf typescript
 au BufRead,BufNewFile *.json setlocal sw=2 ts=2 et
 au BufRead,BufNewFile *.rb setlocal sw=2 ts=2 et
 au BufRead,BufNewFile *.rake setlocal sw=2 ts=2 et
+au BufRead,BufNewFile *.yml setlocal sw=2 ts=2 et
 
 " For all text files set 'textwidth' to 78 characters.
 autocmd FileType text setlocal textwidth=78
