@@ -1,7 +1,7 @@
 " Used mostly to set my target session:window and a 'run tests' command
 
 let g:TmuxTarget = "0"
-let g:TmuxRunTestsCommand = "./bin/rake spec"
+let g:TmuxRunTestsCommand = "last_test"
 
 fun! s:TmuxRunTests()
     exec ":wa"
