@@ -10,6 +10,9 @@ function! tags#GenerateTags()
 	if getfperm(".ctags_exclude") != ""
         let l:ctagsCmd = l:ctagsCmd . " --exclude=@.ctags_exclude"
 	endif
+	if getfperm("Gemfile") != ""
+        let l:ctagsCmd = l:ctagsCmd . " --exclude=vendor --exclude='*.min.js' --exclude=db/migrate --exclude=db/structure.sql --exclude=log --exclude=tmp"
+	endif
     echo "Generating tags: " . l:ctagsCmd
     call system(l:ctagsCmd)
 endfunction
