@@ -23,12 +23,21 @@ au BufRead,BufNewFile *.sbt setf scala
 au BufRead,BufNewFile *supervisor*.conf setf dosini
 au BufRead,BufNewFile *.es6 setf typescript
 au BufRead,BufNewFile *.json setlocal sw=2 ts=2 et
+au BufRead,BufNewFile *.js setlocal sw=2 ts=2 et
 au BufRead,BufNewFile *.rb setlocal sw=2 ts=2 et
 au BufRead,BufNewFile *.rake setlocal sw=2 ts=2 et
+au BufRead,BufNewFile Rakefile setlocal sw=2 ts=2 et
 au BufRead,BufNewFile *.yml setlocal sw=2 ts=2 et
+au BufRead,BufNewFile *.yaml setlocal sw=2 ts=2 et
+au BufRead,BufNewFile *.hs setlocal sw=4 ts=4 et
+au BufRead,BufNewFile *.slim setlocal sw=2 ts=2 et
+au BufRead,BufNewFile *.erb setlocal sw=2 ts=2 et
 
 " For all text files set 'textwidth' to 78 characters.
 autocmd FileType text setlocal textwidth=78
+
+" Git commit lines wrap at 70 characters
+autocmd FileType gitcommit setlocal textwidth=70
 
 " Fix typescript 2-space indents
 autocmd FileType typescript setlocal shiftwidth=4 tabstop=4
