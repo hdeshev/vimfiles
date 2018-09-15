@@ -29,7 +29,7 @@ au BufRead,BufNewFile *.rake setlocal sw=2 ts=2 et
 au BufRead,BufNewFile Rakefile setlocal sw=2 ts=2 et
 au BufRead,BufNewFile *.yml setlocal sw=2 ts=2 et
 au BufRead,BufNewFile *.yaml setlocal sw=2 ts=2 et
-au BufRead,BufNewFile *.hs setlocal sw=4 ts=4 et
+au BufRead,BufNewFile *.hs setlocal sw=2 ts=2 et
 au BufRead,BufNewFile *.slim setlocal sw=2 ts=2 et
 au BufRead,BufNewFile *.erb setlocal sw=2 ts=2 et
 
