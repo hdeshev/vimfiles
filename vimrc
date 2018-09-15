@@ -110,7 +110,9 @@ set nocompatible
 
 set t_Co=256
 set background=dark
-colorscheme nofrils-dark
+"colorscheme nofrils-dark
+let g:solarized_termcolors=256
+colorscheme solarized
 
 "autosave buffers
 set autowriteall
