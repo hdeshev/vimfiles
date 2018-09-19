@@ -111,8 +111,7 @@ set nocompatible
 set t_Co=256
 set background=dark
 "colorscheme nofrils-dark
-let g:solarized_termcolors=256
-colorscheme solarized
+colorscheme zenburn
 
 "autosave buffers
 set autowriteall
@@ -230,3 +229,7 @@ let g:js_indent_typescript = 1
 let g:NERDSpaceDelims = 1
 
 set rtp+=~/.fzf
+
+let g:apex_backup_folder="/tmp/apex/backup"
+let g:apex_temp_folder="/tmp/apex/temp"
+let g:apex_properties_folder="/tmp/apex/properties"
