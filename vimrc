@@ -110,7 +110,7 @@ set nocompatible
 
 set t_Co=256
 set background=dark
-"colorscheme nofrils-dark
+let g:zenburn_old_Visual = 1
 colorscheme zenburn
 
 "autosave buffers
