@@ -35,6 +35,7 @@ au BufRead,BufNewFile *.erb setlocal sw=2 ts=2 et
 
 " For all text files set 'textwidth' to 78 characters.
 autocmd FileType text setlocal textwidth=78
+autocmd FileType markdown setlocal textwidth=100
 
 " Git commit lines wrap at 70 characters
 autocmd FileType gitcommit setlocal textwidth=70
